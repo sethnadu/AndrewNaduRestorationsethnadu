@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}   
+/*-------------------------------------------------------------------*/
+
+
+
+* {
+    box-sizing: border-box; 
+  }
+
+ html {
+     font-size: 65%;
+     font-family: cursive;
+ }
+  
+  body {
+    background-image: url("https://images.unsplash.com/photo-1550039120-5d6529f0c4de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") ; 
+    background-attachment: fixed;
+    background-size: cover; 
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  header {
+    
+    height: 25vh;
+    display: flex; 
+    flex-direction: row;
+    
+    
+    
+    
+    
+    
+    
+
+  }
+
+  header .header-words {
+      
+      border-radius: 10px; 
+      background-color: black;
+      color: white; 
+      opacity: .9;
+      display: flex;
+      flex-flow: column wrap; 
+      align-items: center;
+      margin-top: 20px; 
+      width: 50%;  
+      padding: 20px 0 20px 0;
+      margin: auto;
+      box-shadow: 5px 5px 10px; 
+      
+   
+      
+  }
+
+  .header-words h1 {
+      font-size: 6rem;
+  }
+
+  .header-words h3 {
+      font-size: 2rem;
+  }
+
+
+  .logo {
+    box-shadow: 10px 10px 15px; 
+      display: flex; 
+      height: 120px;
+      width: 120px; 
+      align-self: center;
+      border-radius: 5px; 
+      opacity: 1;
+      margin-left: 110px; 
+     
+      
+  }
+
+  .logo2 {
+        box-shadow: 10px 10px 15px; 
+        display: flex; 
+        height: 120px;
+        width: 120px; 
+        align-self: center;
+        border-radius: 5px; 
+        opacity: 1;
+        margin-right: 110px;
+       
+        
+    }
+  
+
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+    
+  }
+  #main > nav {
+    order: -1;
+  }
+
+  nav {  
+    display: flex; 
+    flex-flow: column wrap; 
+    width: 100%;
+}
+
+  nav a {
+      font-size: 2rem; 
+      text-decoration: none;
+      color: white;
+      border-radius: 10px; 
+      background-color: black;
+      padding: 10px; 
+      text-align: center;
+      margin: 10px;  
+      opacity: .8;
+      box-shadow:5px 5px 10px lightgray;
+  }
+
+
+
+  .article {
+      font-size: 1.6rem;
+      
+      width: 100%;
+      border-radius: 10px solid white; 
+      padding: 10px; 
+      
+  }
+
+  .projects {
+      margin: 30px 0 30px 0; 
+      background-color: black;
+      color: white; 
+      opacity: .9;
+      border-radius: 10px; 
+      box-shadow:5px 5px 10px lightgray;
+  }
+
+  .projects h3#Playroom-title  {
+    text-align: center; 
+    margin: 50px auto auto; 
+    font-size: 3rem;
+    
+    
+}
+
+  article h3.projects-title {
+      font-size: 5rem;
+      margin: 40px auto 30px auto; 
+      text-align: center;
+      border-radius: 10px; 
+      background-color: black;
+      color: white; 
+      opacity: .9;
+      width: 250px; 
+      padding: 10px 30px 20px 30px; 
+      box-shadow:5px 5px 10px lightgray;
+      
+  }
+
+  .house-remodeling {
+      border: 2px solid black; 
+  }
+
+  .title {
+      margin: 20px 0 20px 0;
+      text-align: left;
+      background-color:black;
+      padding: 20px 0 20px 0; 
+      margin: 20px;
+      color: white; 
+      background-color: black;
+      display: flex; 
+      justify-content: space-evenly; 
+      opacity: .9;
+      border-radius: 10px;
+      box-shadow: 10px; 
+      box-shadow:5px 5px 10px lightgray;
+
+  }
+
+.title h3 {
+    font-size: 3rem;
+}
+
+.title a {
+    font-size: 2rem; 
+    text-decoration: none; 
+    color: white;
+
+}
+ .playroom {
+     
+     display: flex;
+     flex-flow: row ;
+     justify-content: space-around;
+
+     padding: 20px; 
+ }
+
+
+.playroom #picture {
+    display: flex;
+    width: 80%;
+     border-radius: 5px; 
+    margin : 0 20px 0 20px; 
+    
+}
+
+ img#picture:hover {
+    opacity: 1;
+   
+}
+
+.projects .playroom-words {
+    border: 2px solid white; 
+    border-radius: 5px; 
+
+    padding-top: 20px; 
+    overflow: auto; 
+    margin: 20px;  
+    padding: 40px; 
+    font-size: 2rem;
+    line-height: 1.5; 
+    height: 340px; 
+}  
+  
+.playroom .playroom-pictures h3.playroom-word {
+    
+    margin: auto auto 20px auto; 
+    font-size: 2rem;
+   
+
+}
+
+.playroom-pictures {
+    display: flex; 
+    flex-direction: column;
+    justify-items: center;
+
+}
+
+aside {
+    
+    width: 100%;
+}
+
+
+
+ .list {
+    border: 2px solid black;
+    border-radius: 10px; 
+    padding: 10px; 
+    font-size: 1.6rem;
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 10px;
+    line-height: 1.5;
+    margin-bottom: 40px; 
+    opacity: .9;
+    width: 100%;
+}
+
+.list .about-title {
+    text-align: center;
+    margin: 10px; 
+    font-size: 4rem;
+}
+
+.list .about-words {
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+
+.icons {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+
+.icons .phone{
+    text-align:center;
+}
+
+.icons a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.icons a.other-icons {
+    margin: 20px;
+    font-size: 6rem;
+}
+
+a.bold {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+}
+
+  footer {
+    background-color:;
+    background-size: 100%;
+    height: 20vh;
+    border: 1px solid red;
+  }
+  
+
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
