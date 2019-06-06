@@ -1,90 +1,383 @@
 <doctype html>
 
     <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            
-            <title>Andrew Nadu: Masonry and Restoration</title>
-            
-            <link rel="stylesheet" href="css/index.css">
-            <script src="https://kit.fontawesome.com/51e784bfe4.js"></script>
-        </head>
-        <body>
-            <header>
-                <img class ="logo" src="images/logo.jpg" alt="Andrew Nadu logo">
-                <div class="header-words">
-                    <h1>Andrew Nadu</h1>
-                    <h3>Masonry & Restoration</h3>
-                </div>
-                <img class ="logo2" src="images/logo.jpg" alt="Andrew Nadu logo">
-             </header>
-            <div id="main">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+        <title>Andrew Nadu: Masonry and Restoration</title>
+
+        <link rel="stylesheet" href="css/index.css">
+        <script src="index.js"></script>
+        <script src="https://kit.fontawesome.com/51e784bfe4.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+
+            <div class="header-words">
+                <h1>Andrew Nadu</h1>
+                <h3>Masonry & Restoration</h3>
+            </div>
+
+        </header>
+        <div id="main">
             <article class="article">
-                      <h3 class="projects-title"> Projects </h3>
+                <h3 class="projects-title"> Projects </h3>
 
-                      <div class="title">
-                            <h3 id="home-remodeling-title">Home Remodeling:</h3>
-                            <a href="#Playroom-title">Playroom</a>
-                            <a href="#">Kitchen</a>
-                       </div>     
-                      <div class="projects house-remodeling">
-                            <h3 id="Playroom-title">Playroom</h3>
-                            <div class="playroom">
-                                <div class="playroom-pictures">
-                                    <h3 class="playroom-word">Before</h3>
-                                    <img id="picture" src="images/playroom/before-1.jpg">
-                                </div>
-                               
-                                <div class="playroom-pictures">
-                                    <h3 class="playroom-word">After</h3>
-                                    <img id="picture" src="images/playroom/After-kitchen-3.jpg">
-                                </div>
-                            </div>   
-                            <div class="playroom-words">
-                                    <p>A before and after of a renovated family room/playroom in our own renovation project! This room was one of the 2 kitchens in our home, and the location directly off of our new kitchen seemed like the perfect place to put our family room. We had to completely gut what was there but once done we had such a great space to work with! We chose to do a shiplap throughout with varying sized boards, built a large closet for the kids toys/crafts, and made a beautiful wooden radiator cover. Lots of natural light and neutral colors with all the wood makes this room warm and inviting!</p>
-                                </div>
-                            <div class="kitchen">
+                <div class="title">
+                    <h3 id="home-remodeling-title">Home Remodeling:</h3>
+                    <a href="#Playroom-title">Playroom</a>
+                    <a href="#">Kitchen</a>
+                </div>
+                <div class="projects house-remodeling">
+                    <h3 id="Playroom-title">Playroom</h3>
+                    <div class="playroom">
+                        <div class="playroom-pictures">
+                            <h3 class="playroom-word">Before</h3>
+                            <div class="picture">
 
+                                <!-- Full-width images with number and caption text -->
+                                <div class="picture-before-1 one fade">
+                                    <div class="numbertext">1 / 2</div>
+                                    <img src="images/playroom/before-1.jpg" style="width:100%">
+                                    <div class="text"></div>
+                                </div>
+
+                                <div class="picture-before-1 two fade">
+                                    <div class="numbertext">2 / 2</div>
+                                    <img src="images/playroom/before-2.jpg" style="width:100%">
+                                    <div class="text"></div>
+                                </div>
+
+
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
                             </div>
-             </article>
-                <nav>
-                    <a href="#home-remodeling-title" class="example1">Home Remodeling</a>
-                    <a href="" class="example2">2</a>
-                    <a href="" class="example3">3</a>
-                    <a href="" class="example1">4</a>
-                    <a href="" class="example1">5</a>
-                    <a href="" class="example1">6</a>
-                    <a href="" class="example1">7</a>
-                    <a href="" class="example1">8</a>
-                    <a href="" class="example1">9</a>
-                    <a href="" class="example1">10</a>
-                </nav>
-            <aside>
-                <div class="list">
-                <div>
-                    <h3 class="about-title"> About</h3>
-                    <h3 class="about-words">All types of masonry work and remodeling including hardscapes and painting. We do full kitchen and bath remodelling aswell as any other restoration/ remodelling needs. <a class="bold">Fully insured.</a> My customers will vouch for my work as I strive for perfection.</h3>
-                </div>
-                </div>
-                <div class="list">
-                    <h3 class="about-title">Contact</h3>
-                    <div class="icons">
-                            <div class="phone">
-                                <p></p>
-                                <br>
-                           </div>
-                            <a class="other-icons phone" href="tel:7173929717"><i class="fas fa-phone"></i></a>
-                            <a class="other-icons facebook" href="https://www.facebook.com/AndrewNaduRestorations/"><i class="fab fa-facebook"></i></a>
-                            <a class="other-icons gmail" href="mailto:andrewnadurestorations@gmail.com "><i class="fas fa-envelope"></i></a>
-                            <a class="other-icons map" href="maps:https://www.google.com/maps/place/15+W+Kendig+Rd,+Willow+Street,+PA+17584/@39.9815517,-76.2820734,17z/data=!3m1!4b1!4m5!3m4!1s0x89c625571d3c4fd7:0xdaab99ddc43ae1b9!8m2!3d39.9815476!4d-76.2798847"><i class="fas fa-map-marker-alt"></i></a>
+                            <br>
+
+
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                            </div>
+                        </div>
+
+                        <div class="playroom-pictures">
+                            <h3 class="playroom-word">After</h3>
+                            <div class="picture">
+
+                                <!-- Full-width images with number and caption text -->
+                                <div class="picture-after-1 one fade">
+                                    <div class="numbertext">1 / 5</div>
+                                    <img src="images/playroom/After-kitchen-3.jpg" style="width:100%">
+                                    <div class="text"></div>
+                                </div>
+
+                                <div class="picture-after-1 two fade">
+                                    <div class="numbertext">2 / 5</div>
+                                    <img src="images/playroom/After-kitchen-4.jpg" style="width:100%">
+                                    <div class="text"></div>
+                                </div>
+
+                                <div class="picture-after-1 two fade">
+                                    <div class="numbertext">3 / 5</div>
+                                    <img src="images/playroom/after-kitcher-1.jpg" style="width:100%">
+                                    <div class="text"></div>
+                                </div>
+
+                                <div class="picture-after-1 two fade">
+                                    <div class="numbertext">4 / 5</div>
+                                    <img src="images/playroom/after-kitchen-2.jpg" style="width:100%">
+                                    <div class="text"></div>
+                                </div>
+
+                                <div class="picture-after-1 two fade">
+                                    <div class="numbertext">5 / 5</div>
+                                    <img src="images/playroom/After-kitchen-5.jpg" style="width:100%">
+                                    <div class="text"></div>
+                                </div>
+
+
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                            </div>
+                            <br>
+
+
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="playroom-words">
+                        <p>A before and after of a renovated family room/playroom in our own renovation project! This
+                            room was one of the 2 kitchens in our home, and the location directly off of our new kitchen
+                            seemed like the perfect place to put our family room. We had to completely gut what was
+                            there but once done we had such a great space to work with! We chose to do a shiplap
+                            throughout with varying sized boards, built a large closet for the kids toys/crafts, and
+                            made a beautiful wooden radiator cover. Lots of natural light and neutral colors with all
+                            the wood makes this room warm and inviting!</p>
+                    </div>
+                    <div class="kitchen">
+
                     </div>
                 </div>
-            </aside>
-            
+                <div class="title">
+                    <h3 id="home-remodeling-title">Mount Gretna House</h3>
+                </div>
+                <div class="projects mount-gretna">
+                    <div class="projects house-remodeling">
+                        <h3 id="Playroom-title mount-gretna">House Renovation</h3>
+                        <div class="playroom">
+                            <div class="playroom-pictures">
+                                <h3 class="playroom-word">Before</h3>
+                                <div class="picture">
+
+                                    <!-- Full-width images with number and caption text -->
+                                    <div class="picture-before-2 one fade">
+                                        <div class="numbertext">1 / 10</div>
+                                        <img src="images/project-2/mg-before-1.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-before-2 two fade">
+                                        <div class="numbertext">2 / 10</div>
+                                        <img src="images/project-2/mg-2.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-before-2 two fade">
+                                        <div class="numbertext">3 / 10</div>
+                                        <img src="images/project-2/mg-3.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-before-2 two fade">
+                                        <div class="numbertext">4 / 10</div>
+                                        <img src="images/project-2/mg-4.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-before-2 two fade">
+                                        <div class="numbertext">5 / 10</div>
+                                        <img src="images/project-2/mg-5.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-before-2 two fade">
+                                        <div class="numbertext">6 / 10</div>
+                                        <img src="images/project-2/mg-6.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-before-2 two fade">
+                                        <div class="numbertext">7 / 10</div>
+                                        <img src="images/project-2/mg-7.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-before-2 two fade">
+                                        <div class="numbertext">8 / 10</div>
+                                        <img src="images/project-2/mg-8.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-before-2 two fade">
+                                        <div class="numbertext">9 / 10</div>
+                                        <img src="images/project-2/mg-9.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-before-2 two fade">
+                                        <div class="numbertext">10 / 10</div>
+                                        <img src="images/project-2/mg-10.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <!-- Next and previous buttons -->
+                                    <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+                                </div>
+                                <br>
+
+
+                                <div style="text-align:center">
+                                    <span class="dot" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                    <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                    <span class="dot" onclick="currentSlide(6)"></span>
+                                    <span class="dot" onclick="currentSlide(7)"></span>
+                                    <span class="dot" onclick="currentSlide(8)"></span>
+                                    <span class="dot" onclick="currentSlide(9)"></span>
+                                    <span class="dot" onclick="currentSlide(10)"></span>
+                                </div>
+                            </div>
+
+                            <div class="playroom-pictures">
+                                <h3 class="playroom-word">After</h3>
+                                <div class="picture">
+                                    <div class="picture-after-2 one fade">
+                                        <div class="numbertext">1 / 10</div>
+                                        <img src="images/project-2/mg-17.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-after-2 two fade">
+                                        <div class="numbertext">2 / 10</div>
+                                        <img src="images/project-2/mg-12.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-after-2 two fade">
+                                        <div class="numbertext">3 / 10</div>
+                                        <img src="images/project-2/mg-13.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-after-2 two fade">
+                                        <div class="numbertext">4 / 10</div>
+                                        <img src="images/project-2/mg-14.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-after-2 two fade">
+                                        <div class="numbertext">5 / 10</div>
+                                        <img src="images/project-2/mg-15.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-after-2 two fade">
+                                        <div class="numbertext">6 / 10</div>
+                                        <img src="images/project-2/mg-16.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-after-2 two fade">
+                                        <div class="numbertext">7 / 10</div>
+                                        <img src="images/project-2/mg-11.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-after-2 two fade">
+                                        <div class="numbertext">8 / 10</div>
+                                        <img src="images/project-2/mg-18.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-after-2 two fade">
+                                        <div class="numbertext">9 / 10</div>
+                                        <img src="images/project-2/mg-19.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <div class="picture-after-2 two fade">
+                                        <div class="numbertext">10 / 10</div>
+                                        <img src="images/project-2/mg-20.jpg" style="width:100%">
+                                        <div class="text"></div>
+                                    </div>
+
+                                    <!-- Next and previous buttons -->
+                                    <a class="prev" onclick="plusSlides(-1,3)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1,3)">&#10095;</a>
+                                </div>
+                                <br>
+
+
+                                <div style="text-align:center">
+                                    <span class="dot" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                    <span class="dot" onclick="currentSlide(4)"></span>
+                                    <span class="dot" onclick="currentSlide(5)"></span>
+                                    <span class="dot" onclick="currentSlide(6)"></span>
+                                    <span class="dot" onclick="currentSlide(7)"></span>
+                                    <span class="dot" onclick="currentSlide(8)"></span>
+                                    <span class="dot" onclick="currentSlide(9)"></span>
+                                    <span class="dot" onclick="currentSlide(10)"></span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="playroom-words">
+                            <p>This house is one of a few we have been working on in Mount Gretna . The first floor
+                                of his house had multiple levels in the existing flooring. The carpet and tile
+                                entryway were removed and the entire floor was raised up over 1" using layers of
+                                plywood. This brought everything to the same level height as the kitchen floor. New
+                                laminate flooring was installed throughout the entire area and new quarter round was
+                                installed. All the cabinet doors were trimmed to fit the new floor. The stairs were
+                                stripped of their carpet and cleaned and so was the hallway upstairs to reveal the
+                                original wood floors. All the Staples were removed throughout all the floors. The
+                                bathroom floor was also removed and new laminate was installed as well as a toilet
+                                and trim.</p>
+                        </div>
+
+
+                    </div>
+            </article>
+            <nav>
+                <a href="#home-remodeling-title" class="example1">Home Remodeling</a>
+                <a href="#mount-gretna" class="example2">Mount Gretna House</a>
+                <a href="" class="example3">3</a>
+                <a href="" class="example1">4</a>
+                <a href="" class="example1">5</a>
+                <a href="" class="example1">6</a>
+                <a href="" class="example1">7</a>
+                <a href="" class="example1">8</a>
+                <a href="" class="example1">9</a>
+                <a href="" class="example1">10</a>
+            </nav>
+            <aside>
+                <div class="list">
+                    <div>
+                        <img class="logo" src="images/logo.jpg" alt="Andrew Nadu logo">
+                        <h3 class="about-title"> About</h3>
+                        <h3 class="about-words">All types of masonry work and remodeling including hardscapes and
+                            painting. We do full kitchen and bath remodelling aswell as any other restoration/
+                            remodelling needs. <a class="bold">Fully insured.</a> My customers will vouch for my work as
+                            I strive for perfection.</h3>
+                    </div>
+                </div>
+
+        </div>
+        </aside>
+
+
+        <footer>
+            <div class="list">
+
+                <div class="icons">
+                    <div class="phone">
+                        <p></p>
+                        <br>
+                    </div>
+                    <a class="other-icons phone" href="tel:7173929717"><i class="fas fa-phone"></i></a>
+                    <a class="other-icons facebook" href="https://www.facebook.com/AndrewNaduRestorations/"><i
+                            class="fab fa-facebook"></i></a>
+                    <h3 class="about-title">Contact</h3>
+                    <a class="other-icons gmail" href="mailto:andrewnadurestorations@gmail.com "><i
+                            class="fas fa-envelope"></i></a>
+                    <a class="other-icons map"
+                        href="maps:https://www.google.com/maps/place/15+W+Kendig+Rd,+Willow+Street,+PA+17584/@39.9815517,-76.2820734,17z/data=!3m1!4b1!4m5!3m4!1s0x89c625571d3c4fd7:0xdaab99ddc43ae1b9!8m2!3d39.9815476!4d-76.2798847"><i
+                            class="fas fa-map-marker-alt"></i></a>
+                </div>
             </div>
-            <footer>Footer</footer>
-         </body>
-   
+
+        </footer>
+    </body>
+
     </html>
 </doctype>
